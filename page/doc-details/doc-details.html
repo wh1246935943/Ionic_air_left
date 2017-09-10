@@ -1,0 +1,139 @@
+<ion-view view-title="医生详情" hide-tabs="true">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button class="button-clear">
+      Back
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list clearfix list-bottom-0">
+      <div class="item row ">
+        <div class="col col-20">
+          <img ng-src="{{docTextInfo.head_url}}" style="width: 100%;border-radius: 7%"/>
+        </div>
+        <div class="col col-80">
+          <div class="doc-name">{{docTextInfo.name}}</div>
+          <div class="doc-room">{{docTextInfo.hospital_name}}</div>
+          <div class="doc-profession">
+            {{docTextInfo.big_hospital_department_name}} {{docTextInfo.job_title}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-con">
+      <div class="tabs-striped tabs-top tabs-background-stable tabs-color-positive">
+        <div class="tabs tabs-position-top">
+          <div class="tab-item" ng-class="{'actived-test':!isActive}" ng-click="isActive=false">
+            预约
+          </div>
+          <div class="tab-item" ng-class="{'actived-test':isActive}" ng-click="isActive=true">
+            资料
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="appointment-show" class="date-info-top-gap" ng-if="!isActive">
+      <ion-list>
+        <ion-item class="text-no-warp doc-room-address">
+          {{docTextInfo.addresses[0].address}}
+        </ion-item>
+      </ion-list>
+      <div class="date-info text-center doc-date-picker" style="border-top: 12px solid #ddd">
+        日期选择
+      </div>
+      <div class="table-containers">
+        <div class="date-head-info">
+          <div class="date-head-items date-text-info-con text-center">日<br>期</div>
+          <div class="date-head-items status-text-info-con text-center">上午</div>
+          <div class="date-head-items status-text-info-con text-center">下午</div>
+        </div>
+        <ion-slide-box class="date-table" show-pager="false">
+          <ion-slide  class="date-option-con">
+            <div class="date-rows" ng-repeat="value in timeTable" ng-class="{1:'actived-date'}[dateChecked[$index]]" ng-click="dateOpt($index)">
+              <div class="date-items text-center date-text-info-con">
+                <span class="date-text-info">{{value.date|date:"MM.dd"}}</span>
+                <br>
+                <span class="week-text-info">{{value.date|date:"EEEE"|weeksName}}</span>
+              </div>
+              <div class="date-items text-center status-text-info-con">
+                <span class="status-text-info">{{value.am|canMake}}</span>
+              </div>
+              <div class="date-items text-center status-text-info-con">
+                <span class="status-text-info">{{value.pm|canMake}}</span>
+              </div>
+            </div>
+          </ion-slide>
+          <ion-slide  class="date-option-con">
+            <div class="date-rows" ng-repeat="value in timeTableNext" ng-class="{1:'actived-date'}[dateChecked[$index+7]]" ng-click="dateOpt($index+7)">
+               <div class="date-items text-center date-text-info-con">
+                <span class="date-text-info">{{value.date|date:"MM.dd"}}</span>
+                <br>
+                <span class="week-text-info">{{value.date|date:"EEE"}}</span>
+              </div>
+              <div class="date-items text-center status-text-info-con">
+                <span class="status-text-info">{{value.am|canMake}}</span>
+              </div>
+              <div class="date-items text-center status-text-info-con">
+                <span class="status-text-info">{{value.pm|canMake}}</span>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+
+      </div>
+
+      <div class="clearfix">
+        <div class="time-select-table">
+          <div class="date-info text-center doc-date-picker" style="border-top: 12px solid #ddd">
+            选择上午时间
+          </div>
+          <div class="time-select-rows">
+            <div class="time-select-items text-center" ng-repeat="value in dateOptionsInfo" ng-click="timePicker({data:value,index:$index,length:dateOptionsInfo})" ng-class="[{'color-red':value.count==-1,'color-black':value.count==0,'color-blue':value.count>0},{'actived-date color-black':dateChoosenArrAM[$index]==1}]">
+              <div class="time-text-info">{{value.time}}</div>
+              <div class="appointment-text-info">{{value.count|countNum}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class=" time-select-table">
+          <div class="date-info text-center doc-date-picker" style="border-top: 12px solid #ddd">
+            选择下午时间
+          </div>
+          <div class="time-select-rows">
+            <div class="time-select-items text-center" ng-repeat="value in dateOptionsInfo1" ng-click="timePicker({data:value,index:$index+4,length:dateOptionsInfo})" ng-class="[{'color-red':value.count==-1,'color-black':value.count==0,'color-blue':value.count>0},{'actived-date color-black':dateChoosenArrPM[$index]==1}]">
+              <div class="time-text-info">{{value.time}}</div>
+              <div class="appointment-text-info">{{value.count|countNum}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="date-info-top-gap" ng-if="isActive">
+      <ion-list>
+        <ion-item class="text-no-warp doc-room-address">
+          爱尔诊所后宰门诊室 后宰门130号创之星大厦一单元122(中户)
+        </ion-item>
+      </ion-list>
+    </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class=" doc-footer-con">
+    <div class="doc-footer-info">
+      <div class="doc-footer-info-type">{{reservationDate.time_type|resType}}</div>
+      <div class="doc-footer-info-devs">提前预约享受更多优惠!</div>
+    </div>
+    <div class="doc-footer-cost">
+      <div class="former-info">{{reservationDate.orig_price}}元</div>
+      <div class="now-info">{{reservationDate.price}}元</div>
+    </div>
+    <div class="buttons" ng-click="docDetailShow()">
+      <button class="button button-full button-positive doc-footer-btn">提交预约</button>
+    </div>
+  </ion-footer-bar>
+</ion-view>
+
+

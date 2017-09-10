@@ -1,0 +1,65 @@
+.ms-bgColor{
+  background: #f0f0f0;
+}
+.my-service .top{
+  display: flex;
+  justify-content: space-between;
+  height:auto;
+  border-top:1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #fff;
+}
+/*顶部导航*/
+.my-service .top div{
+  text-align: center;
+  padding:15px 0;
+  font-size: 20px;
+  width: 25%;
+  /*color:#828282;*/
+  /*border-bottom: 2px solid #09a9ef;*/
+}
+.msTopTabActive{
+  color:#09a9ef;
+  border-bottom: 2px solid #09a9ef;
+}
+.wanghao{
+  color:#828282;
+}
+/*待复诊列表*/
+.my-service .sub-visit-li .list{
+  display: flex;
+  justify-content: inherit;
+  padding: 10px;
+  border-top:1px solid #dddddd;
+  background: #fff;
+}
+/*待复诊列表左边头像*/
+.my-service .sub-visit-li .list .left{
+  text-align: center;
+}
+.my-service .sub-visit-li .list .left .type{
+  padding-top:5px;
+}
+.my-service .sub-visit-li .list .left img{
+  width: 100px;
+}
+/*待复诊列表右边详情*/
+.my-service .sub-visit-li .list .right{
+  padding:0 20px;
+}
+.my-service .sub-visit-li .list .right .name{
+  font-size: 20px;
+  color:#1e1e1e;
+  padding:10px 0;
+}
+.my-service .sub-visit-li .list .right .site{
+  font-size: 18px;
+  color:#828282;
+  padding-bottom:10px;
+}
+.my-service .sub-visit-li .list .right .time{
+  border: 1px solid #09a9ef;
+  border-radius: 5px;
+  color:#09a9ef;
+  padding:5px;
+}

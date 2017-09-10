@@ -1,0 +1,26 @@
+.appointment .tabs-top > .tabs, .tabs.tabs-top {
+  top: 0;
+}
+.appointment .interval{
+  padding-top: 50px;
+}
+.appointment .flex-time{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px ;
+  color: #666666;
+}
+.appointment .time{
+  padding-left: 15px;
+}
+.appointment .urgent{
+  padding-right: 15px;
+  text-align: right;
+}
+.appointment .oral{
+  padding-top: 15px;
+}
+.appointment .rmb{
+  padding-top: 15px;
+  color: #ff3b30;
+}

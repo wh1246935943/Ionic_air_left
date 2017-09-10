@@ -1,0 +1,62 @@
+
+/*待复诊列表*/
+.air-clinic-li .list{
+  display: flex;
+  justify-content: inherit;
+  padding: 10px;
+  border-top:1px solid #dddddd;
+  background: #fff;
+}
+/*待复诊列表左边头像*/
+.air-clinic-li{
+}
+.air-clinic-li .list{
+  padding:20px 10px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.air-clinic-li .list .left{
+  text-align: center;
+}
+.air-clinic-li .list .left img{
+  width: 80px;
+  height:70px;
+}
+/*待复诊列表右边详情*/
+.air-clinic-li .list .right{
+  padding-left:20px;
+}
+.air-clinic-li .list .right .name{
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: "微软雅黑";
+  color:#1e1e1e;
+}
+.air-clinic-li .list .right .site{
+  font-size: 12px;
+  font-weight: bolder;
+  color:#fff;
+  padding:5px 10px;
+  background: #60bdf8;
+  border-radius: 7px;
+  margin-top:11px;
+  display: inline-block;
+}
+.air-clinic-li .list .right .time{
+  border-radius: 5px;
+  color:#09a9ef;
+  position: relative;
+  padding-left: 0;
+  margin-top:10px;
+}
+.air-clinic-li .list .right .time img{
+  width: 16px;
+  height:16px;
+  display: inline-block;
+  position: absolute;
+  top:2px;
+}
+.air-clinic-li .list .right .time span{
+  margin-left:20px;
+  color:#888888;
+}

@@ -1,0 +1,30 @@
+
+#container{
+  width: 100%;
+  height:100%;
+}
+#panel{
+  width: 100%;
+  height:100%;
+}
+.scroll{
+  height:100%;
+}
+.info-title{
+  color: white;
+  font-size: 14px;
+  background-color: rgba(0,155,255,0.8);
+  line-height: 26px;
+  padding: 0px 0 0 6px;
+  font-weight: lighter;
+  letter-spacing: 1px
+}
+.info-content{
+  padding: 4px;
+  color: #666666;
+  line-height: 23px;
+}
+.info-content img{
+  float: left;
+  margin: 3px;
+}

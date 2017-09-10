@@ -1,0 +1,26 @@
+.revise .font-blue{
+  color: #09a9ef;
+  padding-left: 30px;
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.revise .man{
+  display: none;
+}
+.revise .sex{
+  font-size: 15px;
+  height: 30px;
+  width: 95px;
+  display: inline-block;
+  line-height: 30px;
+}
+.revise .man:checked+.sex{
+  background-color: #f7f7f7;
+}
+.revise .man:checked+.sex .font-blue{
+  display: inline-block;
+}
+.revise .gender{
+  padding-left: 15px;
+}

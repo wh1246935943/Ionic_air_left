@@ -1,0 +1,32 @@
+<ion-view view-title="家庭联系人" hide-tabs="true">
+  <ion-nav-buttons side="right">
+    <a class="button button-clear button-dark" href=""ng-click="toAddContacts()">
+      添加
+    </a>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="family">
+<div class="list">
+<a class="item" ng-click="toReviseContacts($index)" ng-repeat="a in familyData">
+<div class="family-name">
+{{a.name}}
+</div>
+<div class="family-phone">
+  <img class="family-pic" src="./img/icon_phone.png" height="17" width="17"/>
+ <span class="family-font">
+   {{a.phone}}
+ </span>
+</div>
+<div class="family-phone">
+  <img  class="family-pic" src="./img/icon_address.png" height="17" width="17"/>
+  <span class="family-font">
+   {{a.address}}
+ </span>
+</div>
+</a>
+
+
+</div>
+    </div>
+  </ion-content>
+</ion-view>

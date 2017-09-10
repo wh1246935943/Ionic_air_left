@@ -1,0 +1,52 @@
+<ion-view view-title="诊室" hide-tabs="true">
+  <ion-content class="cr-bgColor">
+    <div class="con-room">
+      <div class="room-details">
+        <div class="pic">
+          <img ng-src="{{conRoomInfo.pic_url}}" alt="">
+        </div>
+        <div class="info">
+          <div class="title">{{conRoomInfo.name}}</div>
+          <div class="merit">
+            <div>
+              <img src="img/icon_right_blue.png" alt="">
+              <span>三甲名医出诊</span>
+            </div>
+            <div>
+              <img src="img/icon_right_blue.png" alt="">
+              <span>无过度医疗</span>
+            </div>
+          </div>
+          <div class="position" ng-click="toClinicSite(latLon)">
+            <img src="img/icon_address.png" alt="">
+            <span>{{conRoomInfo.address}}</span>
+          </div>
+          <div class="position" ng-click="callPhone(conRoomInfo.phone)">
+            <img src="img/icon_phone.png" alt="">
+            <span class="phone">{{conRoomInfo.phone}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="adm-office">
+        <ul class="list mar-top">
+          <li class="item">
+            科室&nbsp;&nbsp;<span>(点击科室选择医生进行门诊预约)</span>
+          </li>
+        </ul>
+        <ul class="list list-mar-top" ng-click="patientGo(conRoom.id)" ng-repeat="conRoom in conRoomInfo.specialities">
+          <li class="item">
+            <h2>{{conRoom.name}}<span>{{conRoom.doctor_count}}位三甲医生</span></h2>
+            <p>{{conRoom.description}}</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="list room-int">
+        <li class="item">
+          <h2>诊所介绍</h2>
+        </li>
+        <p>爱尔诊所是爱尔集团旗下。。。爱尔诊所是爱尔集团旗下。。。爱尔诊所是爱尔集团旗下。。。</p>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

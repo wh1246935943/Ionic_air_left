@@ -1,0 +1,25 @@
+<ion-view view-title="登陆" hide-nav-bar="true">
+  <ion-content class="login-main">
+    <div class="login">
+      <div class="top">
+        <img src="./img/logo.png"/>
+      </div>
+      <div class="middle">
+        <form name="" id="">
+          <input class="userName" type="text" placeholder="请输入手机号" ng-model="phoneNum">
+          <input class="userPass" type="password" placeholder="请输入密码" ng-model="password">
+          <input class="loginBtn" type="button" value="登录" ng-click="toHomePage(phoneNum,password)">
+        </form>
+        <div class="res-sign">
+          <a href="#/reset"><span>重置密码</span></a>
+          <a href="#/signIn"><span>注册</span></a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <!--底部图片-->
+  <!--<div class="login-bottom">-->
+    <!--<img src="./img/login_bg.png"/>-->
+  <!--</div>-->
+
+</ion-view>

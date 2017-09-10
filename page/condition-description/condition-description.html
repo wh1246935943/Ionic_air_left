@@ -1,0 +1,92 @@
+<ion-view view-title="病情描述" hide-tabs="true">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button class="button-clear back-button-font-16">
+      医生详情
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list class="">
+      <ion-item class="pay-route">
+        <div class="pay-route-item text-center">
+          <i class="icon ion-checkmark-circled positive"></i> <br>
+          病情描述
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          支付
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          平台确认
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          医院就诊
+        </div>
+      </ion-item>
+      <ion-item class="paitent-info-con" id="append-pic-top-margin">
+        <div class="list">
+          <div class="item paitent-doc-name">
+            {{docInfo.docName.name}} {{docInfo.date}} {{docInfo.time}}
+          </div>
+          <div class="item paitents-description">
+            病情描述
+          </div>
+          <label class="item item-input">
+            <input type="text" class="paitents-description-info" ng-model="descriptions.text" placeholder="请描述您的病情">
+          </label>
+          <div class="item paitents-description">
+            病情图片{{descriptions.text}}
+          </div>
+          <div class="item paitents-description-info" ng-click="showPicMethod()">
+            上传图片{{pic.imgSrc}}
+            <i class="ion-chevron-right"></i>
+          </div>
+
+        </div>
+        <!--<div id="append-pic">-->
+
+        <div class="append-pic-show" ng-repeat="value in pic.imgSrc">
+          <div class="paitents-img-info-cons">
+            <img alt="" ng-src="{{value}}" class
+            ="paitents-img-info">
+            <i class="ion ion-close-circled assertive pic-cancel-button" ng-click="removePic($index)"></i>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="list">
+          <div class="item paitents-description">
+            就诊病人
+          </div>
+          <div class="item paitents-description-info" ng-click="showPatientList()">
+            {{patientName?patientName:'选择就诊病人 color!'}}
+            <i class="ion-chevron-right"></i>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <button class="button button-positive button-full button-block doc-detail-show-submit" ng-click="docDetailShow()">
+          提交预约单
+        </button>
+      </ion-item>
+      <ion-item>
+        <div class="list item pay-exp text-no-warp">
+          温馨提示 <br>
+          医生确认后请在服务历史中查看就诊时间,就诊地点和门诊预约码. <br>
+          此费用为您的门诊预约费用,线下就诊另行支付挂号费.
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view view-title="个人中心" hide-back-button="false">
+  <ion-content>
+    <div class="tab-account">
+      <div class="list">
+        <li class="item border">
+          <span class="font-tittle">{{userData.name}}</span>
+          <p><img class="picphone" src="./img/icon_phone.png" height="17" width="17"/><span class="telphone">{{userData.phone}}</span>
+          </p>
+        </li>
+        <div class="hr"></div>
+        <li class="item border postion" ng-click="toPersonalInfo()">
+          <img class="picedit" src="./img/icon_edit.png" height="25" width="25"/>
+          <span class="editaccount">编辑个人信息</span>
+        </li>
+        <li class="item border postion" ng-click="toModifyPassword()">
+          <img class="picedit" src="./img/icon_password_red.png" height="25" width="25"/>
+          <span class="editaccount">修改密码</span>
+        </li>
+        <div class="hr"></div>
+        <li class="item border postion" ng-click="toMyAppointment()">
+          <img class="picedit" src="./img/icon_appointment.png" height="25" width="25"/>
+          <span class="editaccount">我的预约</span>
+        </li>
+        <li class="item border postion" ng-click="toFamilyContacts()">
+          <img class="picedit" src="./img/icon_people.png" height="25" width="25"/>
+          <span class="editaccount">家庭联系人</span>
+        </li>
+        <div class="hr"></div>
+        <li class="item border postion">
+          <img class="picedit" src="./img/icon_message.png" height="25" width="25"/>
+          <span class="editaccount">意见反馈</span>
+        </li>
+        <li class="item border postion">
+          <img class="picedit" src="./img/icon_info.png" height="25" width="25"/>
+          <span class="editaccount">关于</span>
+        </li>
+        <div class="hr"></div>
+        <div class="padding text-center ">
+          <button class="button button-positive button-clear text-center" ng-click="getGoLogin()">
+            退出登录
+          </button>
+        </div>
+        <div class="out">
+
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

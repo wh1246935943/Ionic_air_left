@@ -1,0 +1,67 @@
+<ion-view view-title="支付" class="payoff-page addon-inof addons" id="payoff-page" hide-tabs="true">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button class="button-clear payoff-back-button" ng-click="goBack()">
+      取消支付
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list class="">
+      <ion-item class="pay-route">
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          病情描述
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-checkmark-circled positive"></i> <br>
+          支付
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          平台确认
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-minus-round positive"></i>
+        </div>
+        <div class="pay-route-item text-center">
+          <i class="icon ion-android-radio-button-off positive"></i> <br>
+          医院就诊
+        </div>
+      </ion-item>
+      <ion-item>
+        <span class="pay-font-16">{{billInfos.info.docName.name}}-{{billInfos.info.docName.hospital_department_name}} {{billInfos.info.time_type}}门诊预约</span>
+        <span class="pay-font-14">{{billInfos.info.price}} 元</span>
+      </ion-item>
+      <ion-item class="pay-font-13">预约时间: {{billInfos.info.date}} {{billInfos.info.time}}</ion-item>
+      <ion-item class="pay-font-13">就诊地址: {{billInfos.info.docName.addresses[0].address}}</ion-item>
+      <ion-item class="pay-font-13">病情描述: {{billInfos.descriptions}}</ion-item>
+      <ion-item class="choose-pay-route">请选择支付方式</ion-item>
+      <ion-item class="pay-type" ng-click="payType(0)">
+        <img src="./img/weixinzhifu.png"/>
+        <div class="payment-text-content">
+          <div>微信支付</div>
+          <div class="pay-type-font-12">推荐安装微信5.0及以上版本用户使用</div>
+        </div>
+        <div class="ion-android-checkbox-outline" ng-class="{'positive':paymentType==1}"></div>
+
+      </ion-item>
+      <ion-item class="pay-type" ng-click="payType(1)">
+        <img src="./img/zhifubao.png"/>
+        <div class="payment-text-content">
+          <div>支付宝支付</div>
+          <div class="pay-type-font-12">推荐安装支付宝客户端的用户使用</div>
+        </div>
+        <div class="ion-android-checkbox-outline" ng-class="{'positive':paymentType==2}"></div>
+      </ion-item>
+      <button class="button button-positive button-full button-block" ng-click="payIt()">
+        确认支付
+      </button>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

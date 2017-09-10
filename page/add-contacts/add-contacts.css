@@ -1,0 +1,26 @@
+.add .font-blue{
+  color: #09a9ef;
+  padding-left: 30px;
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.add .man{
+  display: none;
+}
+.add .sex{
+  font-size: 15px;
+  height: 30px;
+  width: 95px;
+  display: inline-block;
+  line-height: 30px;
+}
+.add .man:checked+.sex{
+  background-color: #f7f7f7;
+}
+.add .man:checked+.sex .font-blue{
+  display: inline-block;
+}
+.add .gender{
+  padding-left: 15px;
+}

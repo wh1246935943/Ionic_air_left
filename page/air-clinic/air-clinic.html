@@ -1,0 +1,19 @@
+<ion-view view-title="爱尔诊所" hide-tabs="true">
+  <ion-content>
+    <div class="air-clinic-li" ng-repeat="clinic in clinicList">
+      <div class="list" ng-click="toConRoom(clinic.id)">
+        <div class="left">
+          <div class="hp"><img ng-src="{{clinic.pic_url}}" alt=""></div>
+        </div>
+        <div class="right">
+          <div class="name">{{clinic.name}}</div>
+          <span class="site">{{clinic.departments[0].name}}</span>
+          <div class="time">
+            <img src="img/icon_address.png" alt="">
+            <span>{{clinic.address}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

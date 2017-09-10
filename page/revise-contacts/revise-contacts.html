@@ -1,0 +1,53 @@
+<ion-view view-title="修改联系人">
+  <ion-content>
+    <div class="revise">
+<div class="list">
+  <label class="item item-input">
+    <span class="input-label">姓名</span>
+    <input type="text" ng-model="user.name">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">身份证</span>
+    <input type="text"ng-model="user.identity_card">
+  </label>
+
+  <label class="item item-input">
+    <span class="input-label">性别</span>
+    <input  class="man" type="radio"name="gender" id="man" ng-model="user.gender"ng-value="1">
+    <label class="sex" for="man">
+      <span class="gender">男</span>
+      <span class="font-blue icon ion-checkmark"></span>
+    </label >
+    <input  class="man" type="radio"name="gender" id="woman"ng-model="user.gender" ng-value="2">
+    <label class="sex" for="woman">
+      <span class="gender">女</span>
+      <span class="icon ion-checkmark font-blue"></span>
+    </label>
+
+  </label>
+  <label class="item item-input">
+    <span class="input-label">联系电话</span>
+    <input type="text" ng-model="user.phone">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">地址</span>
+    <input type="text" ng-model="user.address">
+  </label>
+</div>
+<div class="card">
+  <div class="item item-text-wrap">
+    <div>温馨提示</div>
+    请您正确填写个人信息,以便为您带来更优质的服务！
+  </div>
+</div>
+<div class="padding">
+  <button class="button button-positive button-block" ng-click="goToSaveContacts()">
+    保存
+  </button>
+  <button class="button button-assertive button-block"ng-click="goToDeleteContacts()">
+    删除
+  </button>
+</div>
+    </div>
+</ion-content>
+</ion-view>

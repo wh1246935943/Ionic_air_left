@@ -1,0 +1,96 @@
+<ion-view view-title="爱尔生活">
+  <ion-content class="hp-bgColor">
+    <!--焦点图开始-->
+    <ion-slides  options="options" slider="data.slider" id="alPic">
+      <ion-slide-page>
+        <img src="img/pic_home_banner.png" height="576" width="1024"/>
+      </ion-slide-page>
+      <ion-slide-page>
+
+        <img src="img/slide1.jpg" height="288" width="552"/>
+      </ion-slide-page>
+      <ion-slide-page>
+
+        <img src="img/slide2.jpg" height="387" width="580"/>
+      </ion-slide-page>
+    </ion-slides>
+    <!--焦点图结束-->
+
+    <!--导航开始-->
+    <div class="al-nav">
+      <div class="row" style="border-bottom: 1px solid #dddddd">
+        <div class="col" style="border-right: 1px solid #dddddd">
+          <div class="sub-visit">
+            <div class="left" ng-click="toMsSubVisit()">
+              <p>复诊</p>
+              <span>及时复诊预约</span>
+            </div>
+            <div class="right">
+              <img src="./img/icon_fuzhen.png"/>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="clinic" ng-click="toAirClinic('/airLift/airClinic')">
+            <div class="left">
+              <p>爱尔诊所</p>
+              <span>名医坐诊</span>
+            </div>
+            <div class="right">
+              <img src="./img/icon_aierzhensuo.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="border-right: 1px solid #dddddd">
+          <div class="doctor">
+            <div class="left">
+              <p>名医联盟</p>
+              <span>线上咨询</span>
+            </div>
+            <div class="right">
+              <img src="./img/icon_mingyilianmeng.png"/>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="business">
+            <div class="left">
+              <p>商户联盟</p>
+              <span>信赖商户</span>
+            </div>
+            <div class="right">
+              <img src="./img/icon_major.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--导航结束-->
+
+    <!--医生推荐开始-->
+    <div class="rec-doctor">
+      <div class="row">
+        <div class="col">
+          <div class="title">名医联盟推荐医生</div>
+        </div>
+      </div>
+      <div class="famous-doctor" ng-repeat="doctorInfo in infoList">
+        <div class="row">
+          <div class="col-25">
+            <!--<img ng-src="{{doctorInfo.big_hospital_head_url}}"/>-->
+          </div>
+          <div class="col-75">
+            <div class="name">{{doctorInfo.real_name}}&nbsp;&nbsp;&nbsp;<span>{{doctorInfo.big_hospital_department_name}} {{doctorInfo.job_title}}</span></div>
+            <div class="hospital">{{doctorInfo.big_hospital_name}}</div>
+            <div class="introduce">{{doctorInfo.big_hospital_introduction}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--医生推荐结束-->
+
+  </ion-content>
+</ion-view>
+

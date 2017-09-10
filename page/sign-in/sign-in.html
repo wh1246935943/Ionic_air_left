@@ -1,0 +1,25 @@
+<ion-view view-title="注册" class="login-body">
+  <ion-content class="signIn-main">
+    <div class="signIn">
+      <div class="top">
+        <img src="./img/logo.png"/>
+      </div>
+      <div class="middle">
+        <form action="" name="" id="">
+          <input class="userName" type="text" placeholder="请输入手机号" ng-model="phoneNum">
+          <div class="ver-code-box">
+            <input class="userVerify" type="number" placeholder="请输入验证码" ng-model="sms_code">
+            <span id="changeBtn" class="ver-code" ng-class="{disabledSt:isClick}" ng-click="getVerCode(phoneNum)"><span id="changeTxt">{{textGetVer}}</span>{{verCodeNum}}</span>
+            {{isClick}}
+          </div>
+          <input class="userPass" type="password" placeholder="请输入密码" ng-model="password">
+          <input class="userInvite" type="number" placeholder="请输入邀请码" ng-model="invitation_code">
+          <ion-list>
+            <ion-checkbox ng-model="a.checkeder" value="111" class="agree">同意爱尔生活注册协议</ion-checkbox>
+          </ion-list>
+          <input class="signBtn" type="button" value="注册" ng-click="signIn(phoneNum, password,sms_code,invitation_code)">
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

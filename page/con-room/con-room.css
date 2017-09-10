@@ -1,0 +1,111 @@
+.cr-bgColor{
+  background: #f0f0f0;
+}
+.con-room .room-details .pic{
+  width: 100%;
+  height:188px;
+}
+.con-room .room-details .pic img{
+  width: 100%;
+  height:188px;
+}
+.con-room .room-details .info{
+  padding:0 14px;
+  height:auto;
+  background: #fff;
+}
+.con-room .room-details .info .title{
+  padding-top:23px;
+}
+.con-room .room-details .info .merit{
+  margin-top:16px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom:16px;
+}
+.con-room .room-details .info .merit div{
+  position: relative;
+}
+.con-room .room-details .info .merit div:last-child{
+  margin-left:25px;
+}
+.con-room .room-details .info .merit img{
+  width: 15px;
+  height:15px;
+  position: absolute;
+  top:2px;
+}
+.con-room .room-details .info .merit span {
+  /*display: inline-block;*/
+  margin-left:25px;
+}
+.con-room .room-details .info .position{
+  padding:15px 0;
+  position: relative;
+  /*background: chartreuse;*/
+  font-size: 14px;
+  background:url(../img/icon_common_rightarrow.png);
+  background-size: 18px 18px;
+  background-position: 100% 16px;
+  background-repeat: no-repeat;
+}
+.con-room .room-details .info .position img{
+  position: absolute;
+  top:16px;
+  width: 18px;
+}
+.con-room .room-details .info .position span{
+  margin-left: 25px;
+}
+.con-room .room-details .info .position .phone{
+  color:#0505ee;
+}
+
+
+/*科室*/
+.con-room .adm-office .mar-top{
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.con-room .adm-office .mar-top .item span{
+  color:#87cefa;
+  font-size: 12px;
+}
+
+.con-room .adm-office .list-mar-top{
+  margin-bottom: 0;
+}
+.con-room .adm-office .list-mar-top .item{
+  padding-top:18px;
+  padding-bottom: 18px;
+}
+.con-room .adm-office .list-mar-top .item p{
+  padding-top:7px;
+}
+.con-room .adm-office .list-mar-top h2{
+  font-size: 15px;
+  font-weight: bold;
+  color:#1e1e1e;
+  margin-bottom: 9px;
+}
+
+.con-room .adm-office .list-mar-top h2 span{
+  font-size: 14px;
+  color:#888888;
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 17px;
+}
+.con-room .room-int{
+  margin-top:10px;
+  background: #fff;
+  color:#444444;
+}
+.con-room .room-int .item{
+  margin-bottom: 1px;
+}
+.con-room .room-int p{
+  margin:20px 15px;
+  text-indent: 2em;
+  color:#888888;
+}

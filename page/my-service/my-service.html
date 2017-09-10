@@ -1,0 +1,68 @@
+<ion-view view-title="我的服务">
+  <ion-content class="ms-bgColor">
+    <div class="my-service">
+      <div class="top">
+        <div ng-click="clickCla1()" ng-class="{msTopTabActive:showAcknowledged,wanghao:!showAcknowledged}">已确认</div>
+        <div ng-click="clickCla2()" ng-class="{msTopTabActive:showTbc,wanghao:!showTbc}">待确认</div>
+        <div ng-click="clickCla3()" ng-class="{msTopTabActive:showToVisit,wanghao:!showToVisit}">待复诊</div>
+        <div ng-click="clickCla4()" ng-class="{msTopTabActive:showUnpaid,wanghao:!showUnpaid}">待支付</div>
+      </div>
+      <div ng-switch="showList">
+        <div ng-switch-when="1" class="sub-visit-li">
+          <!--<div class="list">-->
+            <!--<div class="left">-->
+              <!--<div class="hp"><img src="./img/head.jpg" alt=""></div>-->
+              <!--<div class="type">确认</div>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+              <!--<div class="name">李医生</div>-->
+              <!--<div class="site">后宰门</div>-->
+              <!--<div class="time">确认时间：2016-01-25</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+        <div ng-switch-when="2" class="sub-visit-li">
+          <!--<div class="list">-->
+            <!--<div class="left">-->
+              <!--<div class="hp"><img src="./img/head.jpg" alt=""></div>-->
+              <!--<div class="type">等待</div>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+              <!--<div class="name">王医生</div>-->
+              <!--<div class="site">后宰门</div>-->
+              <!--<div class="time">等待复诊时间：2016-01-25</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+        <div ng-switch-when="3" class="sub-visit-li">
+          <div class="list">
+            <div class="left">
+              <div class="hp"><img src="./img/head.jpg" alt=""></div>
+              <div class="type">复诊</div>
+            </div>
+            <div class="right">
+              <div class="name">张医生</div>
+              <div class="site">后宰门</div>
+              <div class="time">建议复诊时间：2016-01-25</div>
+            </div>
+          </div>
+        </div>
+        <div ng-switch-when="4" class="sub-visit-li">
+          <!--<div class="list">-->
+            <!--<div class="left">-->
+              <!--<div class="hp"><img src="./img/head.jpg" alt=""></div>-->
+              <!--<div class="type">支付</div>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+              <!--<div class="name">田医生</div>-->
+              <!--<div class="site">后宰门</div>-->
+              <!--<div class="time">支付时间：2016-01-25</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+

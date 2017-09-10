@@ -1,0 +1,89 @@
+
+.reset-main {
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+.reset {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 20px;
+}
+
+.reset .top img {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.reset .middle {
+  margin-top: 80px;;
+}
+
+.reset .middle form .userName {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  padding-left: 70px;
+  background: url(../img/icon_accountnumber.png);
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  background-size: 25px;
+}
+
+.reset .middle form .userVerify {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  padding-left: 70px;
+  background: url(../img/icon_verificationcode.png);
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  background-size: 25px;
+}
+
+.reset .middle form .userPass {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-left: 70px;
+  background: url(../img/icon_password.png);
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  background-size: 25px;
+  margin-bottom: 30px;
+}
+
+.reset .middle form .cancelBtn, .resetBtn {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.reset .middle form .resetBtn:active {
+  background: #0ba9f0;
+}
+
+.reset .middle .agree {
+  border-width: 0;
+}
+
+.reset .middle form .ver-code-box {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.reset .middle form .ver-code-box .ver-code {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #000000;
+}

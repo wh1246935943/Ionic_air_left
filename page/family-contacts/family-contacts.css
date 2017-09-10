@@ -1,0 +1,19 @@
+.family .family-name{
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 20px;
+  color: #444444;
+}
+.family .family-phone{
+  font-size: 10px;
+  color: #8e8e8e;
+  padding-top: 15px;
+  position: relative;
+}
+.family .family-pic{
+  position: absolute;
+  top: 17px;
+}
+.family .family-font{
+  margin-left: 20px;
+}

@@ -1,0 +1,21 @@
+<ion-view view-title="重置密码" class="login-body" hide-tabs="true">
+  <ion-content class="reset-main">
+    <div class="reset">
+      <div class="top">
+        <img src="./img/logo.png"/>
+      </div>
+      <div class="middle">
+        <form action="" name="" id="">
+          <input class="userName" type="text" placeholder="请输入手机号" ng-model="phoneNum">
+          <div class="ver-code-box">
+            <input class="userVerify" type="number" placeholder="请输入验证码" ng-model="sms_code">
+            <span id="changeBtn" class="ver-code" ng-click="getVerCode(phoneNum)"><span id="changeTxt">{{textGetVer}}</span>{{verCodeNum}}</span>
+          </div>
+          <input class="userPass" type="password" placeholder="请输入密码" ng-model="password">
+          <input class="resetBtn" type="button" value="重置" ng-click="resetPassword(phoneNum,sms_code,password)">
+          <input class="cancelBtn" type="button" value="取消" ng-click="backLogin()">
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

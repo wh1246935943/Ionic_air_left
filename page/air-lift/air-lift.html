@@ -1,0 +1,19 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-class="{'tabs-item-hide': $root.hideTabs}">
+
+  <!-- 首页 Tab -->
+  <ion-tab title="首页" icon-off="off-home-page" icon-on="on-home-page" href="#/airLift/homePage">
+    <ion-nav-view name="air-homePage"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 我的服务 Tab -->
+  <ion-tab title="我的服务" icon-off="off-my-service" icon-on="on-my-service" href="#/airLift/myService">
+    <ion-nav-view name="air-myService"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 个人中心 Tab -->
+  <ion-tab title="个人中心" icon-off="off-person-center" icon-on="on-person-center" href="#/airLift/account">
+    <ion-nav-view name="air-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

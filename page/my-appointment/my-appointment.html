@@ -1,0 +1,48 @@
+<ion-view view-title="我的预约" hide-tabs="true">
+  <ion-content>
+    <div class="appointment">
+      <div class="tabs-striped tabs-top ">
+        <div class="tabs">
+          <a class="tab-item active" ng-class="{'active':isActive}" ng-click="isActive=true">
+            未付款
+          </a>
+          <a class="tab-item" ng-class="{'active':!isActive}" ng-click="isActive=false">
+            已付款
+          </a>
+        </div>
+      </div>
+      <div class="interval" ng-if="isActive">
+        <ul class="list">
+          <li class="item">
+            <div class="flex-time">
+              <div class="time">
+                <div>2016-12-02 11:25 <span class="padding">康康</span></div>
+                <div class="oral">产科 康医生(工号438)</div>
+              </div>
+              <div class="urgent">
+                <div>加急预约</div>
+                <div class="rmb">￥0.01</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="interval" ng-if="!isActive">
+        <ul class="list">
+          <li class="item">
+            <div class="flex-time">
+              <div class="time">
+                <div>2016-12-02 11:25 <span class="padding">邓超</span></div>
+                <div class="oral">口腔科 孙医生(工号007)</div>
+              </div>
+              <div class="urgent">
+                <div>加急预约</div>
+                <div class="rmb">￥0.01</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

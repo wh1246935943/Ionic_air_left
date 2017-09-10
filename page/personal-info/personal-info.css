@@ -1,0 +1,26 @@
+.personal-info .font-blue{
+  color: #09a9ef;
+  padding-left: 30px;
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.personal-info .man{
+  display: none;
+}
+.personal-info .sex{
+  font-size: 15px;
+  height: 30px;
+  width: 95px;
+  display: inline-block;
+  line-height: 30px;
+}
+.personal-info .man:checked+.sex{
+  background-color: #f7f7f7;
+}
+.personal-info .man:checked+.sex .font-blue{
+  display: inline-block;
+}
+.personal-info .gender{
+  padding-left: 15px;
+}

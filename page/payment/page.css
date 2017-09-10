@@ -1,0 +1,307 @@
+/*--门诊室-START--*/
+.text-no-warp{
+  white-space: normal;
+}
+.doc-name{
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  /*padding-top:19px;*/
+}
+.doc-room{
+  font-size: 13px;
+  color: #484848;
+  padding-top:11px;
+}
+.doc-info,.doc-profession{
+  font-size: 13px;
+  color: #707070;
+  padding-top:7px;
+  white-space:normal;
+
+}
+.list-bottom-0{
+  margin-bottom: 0;
+}
+.doc-room-address{
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.list.item.list-margin-0{
+  margin:0;
+  padding:0;
+}
+.doc-date-picker{
+  font-size: 14px;
+  padding-top:11px;
+  padding-bottom: 14px;
+}
+.tabs-con{
+  position: relative;
+}
+.tabs-top>.tabs.tabs-position-top{
+  position: absolute;
+  top:0px;
+  background-color: #ffffff;
+}
+
+.tabs-color-positive .tabs-position-top .actived-test{
+  color: #387ef5;
+  margin-top: 1px;
+  border-width: 0px 0px 2px 0px !important;
+  border-style: solid;
+  border-color: #387ef5;
+  background-color: #ffffff;
+}
+.date-info-top-gap{
+  margin-top:47px;
+}
+.date-option-con{
+  display: flex;
+}
+.table-containers{
+  display: flex;
+  /*justify-content:center ;*/
+}
+.date-head-info{
+  /*margin-left:10%;*/
+  display: flex;
+  flex-direction: column;
+  width:10%;
+}
+.date-head-items{
+  font-size: 14px;
+  border:1px solid #ddd;
+  /*height:50px;*/
+  width:100%;
+}
+.date-table{
+  width:100%;
+}
+.date-table .date-rows{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  width: 100%;
+}
+/*.date-option-con .date-rows:hover{
+  background-color: rgb(200,200,400);
+}*/
+.time-select-table .time-select-rows .actived-date{
+  background-color: #98D1FF;
+}
+.date-option-con .date-rows.actived-date{
+  background-color: lightskyblue;
+}
+.date-table .date-rows::selection{
+  background: #0c60ee;
+}
+.date-table .date-rows .date-items{
+  border:1px solid #ddd;
+  /*height:50px;*/
+  line-height: 20px;
+  width: 100%;
+
+}
+.date-text-info-con{
+  height:53px;
+}
+.status-text-info-con{
+  height:30px;
+}
+.date-items .date-text-info{
+  font-size: 9px;
+  color: #000000;
+}
+
+.date-items .week-text-info{
+  font-size: 12px;
+  color:#000000;
+}
+.date-items .status-text-info{
+  font-size: 13px;
+  color:#5cbaf0;
+}
+.time-select-table .time-select-rows{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.time-select-table .time-select-rows .time-select-items{
+  width: 25%;
+  border:1px solid #ddd;
+}
+.time-select-table .time-select-rows .time-select-items.color-red{
+  color:#f36e6f;
+}
+.time-select-table .time-select-rows .time-select-items.color-blue{
+  color:#5cbaee;
+}
+.time-select-table .time-select-rows .time-select-items.color-black{
+  color:#444444;
+}
+.time-text-info{
+  font-size: 14px;
+  padding-top:20px;
+}
+.appointment-text-info{
+  padding-top:5px;
+  padding-bottom:11px;
+  font-size: 12px;
+}
+.doc-footer-con{
+  display: flex;
+  justify-content:space-between;
+  margin:0;
+  padding:0;
+}
+.doc-footer-con .doc-footer-info{
+  padding-left:10px;
+  padding-top:5px;
+}
+.doc-footer-con .doc-footer-info-type{
+  color: #444444;
+  font-size: 15px;
+}
+.doc-footer-con .doc-footer-info-devs{
+  color: #888888;
+  font-size: 12px;
+}
+.doc-footer-con .doc-footer-cost{
+  text-align: right;
+  width: 30%;
+  padding-top:5px;
+
+}
+.doc-footer-con .doc-footer-cost .former-info{
+  color: #959595;
+  font-size: 14px;
+  text-decoration:line-through;
+}
+.doc-footer-con .doc-footer-cost .now-info{
+  color: #ff3b30;
+  font-size: 15px;
+}
+.doc-footer-con .doc-footer-btn{
+  margin:0;
+}
+.pay-route{
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+  font-size: 12px;
+}
+.pay-route-item{
+  width:13%;
+}
+.pay-exp{
+  font-size:13px;
+  color:#444444;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  padding:10px;
+}
+.payoff-page .pay-type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#666666;
+  font-size: 13px;
+}
+.pay-type img{
+  height: 40px;
+}
+/*#append-pic-top-margin{*/
+  /*margin-bottom:0;*/
+  /*border-bottom: 0;*/
+/*}*/
+.paitent-info-con .paitent-doc-name{
+  font-size:15px;
+  color:#444444;
+  padding-top:13px;
+  padding-bottom:13px;
+
+}
+.paitent-info-con .paitents-description{
+  font-size:14px;
+  color:#000000;
+  font-weight: bold;
+  padding-top:7px;
+  padding-bottom:7px;
+}
+.paitent-info-con .paitents-description-info{
+  font-size:13px;
+  color:#aaaaaa;
+  padding-top:13px;
+  padding-bottom:13px;
+}
+/*.append-pic-hide{
+  display: none;
+}*/
+.append-pic-show{
+  display: block;
+}
+.paitents-img-info-cons{
+  position: relative;
+  float: left;
+  padding-left:6px;
+  margin-top:-4px;
+  margin-bottom:6px;
+}
+
+.paitents-img-info-cons .paitents-img-info{
+  height:136px;
+}
+.pic-cancel-button{
+  position: absolute;
+  right:1px;
+  top:-8px;
+  margin:0;
+  padding:0;
+  border-radius: 11px;
+  background-color: rgba(255,255,255,0.7);
+}
+.doc-detail-show-submit{
+  font-size: 15px;
+}
+
+.payoff-page .pay-font-13{
+  font-size: 13px;
+  color:#444444;
+}
+.payoff-page .pay-font-16{
+  font-size: 16px;
+  color:#444444;
+  font-weight: bold;
+}
+.payoff-page .pay-font-14{
+  font-size: 16px;
+  color:#ff3b30;
+  font-weight: bold;
+}
+.payoff-page .choose-pay-route{
+  color:#222222;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+.payoff-page .pay-type-font-12{
+  font-size: 12px;
+}
+.payment-text-content{
+  width: 75%;
+}
+.bar .title{
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+.payoff-page.addon-inof .payoff-back-button.button-clear{
+  font-size: 16px;
+  color: #b2b2b2;
+}
+.button.button-clear.back-button-font-16{
+  font-size: 16px;
+}
+
+/*--门诊室-END--*/

@@ -1,0 +1,22 @@
+<ion-view view-title="爱尔诊所后宰门诊室" hide-tabs="true">
+  <!--<ion-nav-bar class="badge-stable">-->
+    <!--<ion-nav-back-button class="button-clear">-->
+    <!--</ion-nav-back-button>-->
+  <!--</ion-nav-bar>-->
+  <ion-content>
+    <div class="list" ng-repeat="value in docRooms">
+      <div class="item row " ng-click="docDetailShow()">
+        <div class="col col-20">
+          <img ng-src={{value.head_url}} style="width: 100%;border-radius: 7%"/>
+        </div>
+        <div class="col col-80">
+          <div class="doc-name">{{value.name}}</div>
+          <div class="doc-room">{{value.hospital_name}}</div>
+          <div class="doc-info">
+            {{value.introducation}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

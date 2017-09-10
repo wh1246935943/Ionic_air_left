@@ -1,0 +1,77 @@
+/*开始*/
+
+/*.login-body{*/
+  /*!*position: relative;*!*/
+  /*height:100%;*/
+/*}*/
+
+.login-main{
+  background:#fff url(../img/login_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 150px;
+}
+.login{
+  width: 80%;
+  margin:0 auto;
+  height:auto;
+  padding-top: 20px;
+}
+.login .top img{
+  width: 100px;
+  height:auto;
+  display: block;
+  margin:0 auto;
+}
+.login .middle{
+  margin-top: 80px;;
+}
+.login .middle form .userName{
+  width: 100%;
+  height:50px;
+  border: 1px solid #dddddd;
+  padding-left: 70px;
+  background: url(../img/icon_accountnumber.png);
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  background-size: 25px;
+}
+.login .middle form .userPass{
+  width: 100%;
+  height:50px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-left: 70px;
+  background: url(../img/icon_password.png);
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  background-size: 25px;
+}
+.login .middle form .loginBtn{
+  width: 100%;
+  height:50px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  background: #fff;
+}
+.login .middle form .loginBtn:active{
+  background: #0ba9f0;
+}
+.login .middle .res-sign{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color:#b3b3b3;
+  font-size: 20px;
+}
+.login-bottom{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height:auto;
+}
+.login-bottom img{
+  width: 100%;
+  height:150px;
+  display: block;
+}
